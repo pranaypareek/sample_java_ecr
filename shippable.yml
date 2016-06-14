@@ -5,10 +5,10 @@ jdk:
 
 build:
   pre_ci:
-      - docker build -t=shippabledocker/hitchcock3_sample_node .
+      - docker build -t=pranay/hitchcock3_sample_node .
 
   pre_ci_boot:
-      image_name: shippabledocker/hitchcock3_sample_node
+      image_name: pranay/hitchcock3_sample_node
       image_tag: latest
       pull: false
       options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -18,7 +18,7 @@ build:
       - ls -al
 
   post_ci:
-      - docker push shippabledocker/hitchcock3_sample_node
+      - docker push pranay/hitchcock3_sample_node
 
 integrations:
   hub:
