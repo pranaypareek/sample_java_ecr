@@ -27,8 +27,3 @@ integrations:
   hub:
     - integrationName: ecr
       type: ecr
-      branches:
-        only:
-         - master
-      
-      
