@@ -25,10 +25,10 @@ build:
 
 integrations:
   hub:
-     - integrationName: ecr
-       type: docker
-       branches:
-         only:
-           - master
+    - integrationName: ecr
+      type: ecr
+      branches:
+        only:
+         - master
       
       
