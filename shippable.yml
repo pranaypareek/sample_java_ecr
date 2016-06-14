@@ -17,6 +17,9 @@ build:
       - ps -eax
       - ls -al
 
+  post_ci:
+      - docker push pranay/hitchcock3_sample_node
+
 integrations:
   hub:
     - integrationName: ecr
